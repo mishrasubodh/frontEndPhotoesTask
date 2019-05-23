@@ -1,0 +1,5 @@
+<tbody>
+  <tr *ngFor = "let item of userdata; let i = index ">
+      <td (click)=showalbum(item.id);> {{item.name}}</td>
+  </tr>
+</tbody>
