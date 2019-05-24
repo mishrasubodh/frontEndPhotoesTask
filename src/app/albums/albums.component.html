@@ -1,3 +1,9 @@
-<p>
-  albums works!
-</p>
+<!-- <tr *ngFor="let album of albumdata;let i = index;">
+  <td (click)="showPhoto(album.id)">{{album.title}}</td>
+</tr> -->
+<ul class="makicho">
+  <li *ngFor="let album of albumdata;let i = index;">
+    <p (click)="showPhoto(album.id)">{{album.title}}</p>
+  </li>
+  <button mat-raised-button color="primary" (click)="backClicked();">Primary</button>
+</ul>

@@ -6,12 +6,20 @@ import { BehaviorSubject } from 'rxjs';
 export class GlobalserviceService {
   private dataSource = new BehaviorSubject('id');
   data = this.dataSource.asObservable();
+
+  private dataforphoto = new BehaviorSubject('id');
+ photodata = this.dataforphoto.asObservable();
+
   constructor() {
-    console.log('idon glowal',this.data);
    }
 
   updatedDataSelection(data:any){
     this.dataSource.next(data);
     console.log('idon glowal',data);
 }
+updatedDataForphoto(photodata:any){ 
+  this.dataforphoto.next(photodata);
+  console.log(' photo id on glowal',photodata);
+}
+
 }

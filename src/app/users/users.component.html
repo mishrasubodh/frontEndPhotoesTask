@@ -1,5 +1,10 @@
-<tbody>
+<!-- <tbody>
   <tr *ngFor = "let item of userdata; let i = index ">
       <td (click)=showalbum(item.id);> {{item.name}}</td>
   </tr>
-</tbody>
+</tbody> -->
+<ul class="makicho">
+  <li *ngFor = "let item of userdata; let i = index ">
+    <p (click)=showalbum(item.id);> {{item.name}}</p>
+  </li>
+</ul>

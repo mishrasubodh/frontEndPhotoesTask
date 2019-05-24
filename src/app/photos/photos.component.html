@@ -1,3 +1,4 @@
-<p>
-  photos works!
-</p>
+<div class="wd-100" *ngFor="let brochure of photodata;let i = index; ">
+<div class="wd-25" *ngIf="i<5"><img class="brochure-poster wd-100" [src]="brochure.url" /></div>
+</div>
+<button mat-raised-button color="primary" (click)="backClicked();">Primary</button>

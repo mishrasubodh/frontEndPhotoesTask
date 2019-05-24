@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.makicho li{
+    list-style-type: none;
+}
+.makicho {
+    padding-left: 0px !important;
+}
+.wd-25{
+    width: 25%;
+    float: left;
+}
+.wd-100{
+    width: 100%;
+    display: inline-block;
+}

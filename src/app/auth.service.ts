@@ -19,7 +19,9 @@ return this.http.get(this.URL+'users')
     return this.http.get(this.URL+'albums')
    }
 
-   
+   getalphotos(){
+    return this.http.get(this.URL+'photos')
+   }
 
 
 }
